@@ -25,7 +25,7 @@ export default function Prices() {
             transition={cardTransition}
           >
             <h2 className={styles.title}>{title}</h2>
-            <p className={styles.price}>Новый: <span>₽{price}</span></p>
+            <p className={styles.price}>Первично: <span>₽{price}</span></p>
             <p className={styles.correction}>Коррекция: <span>₽{correction}</span></p>
             <NavLink
               to="/contacts"
