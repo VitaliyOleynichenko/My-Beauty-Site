@@ -1,0 +1,64 @@
+.pricesSection {
+  max-width: 1200px;
+  margin: 80px auto 40px;
+  padding: 0 16px;
+}
+
+.heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #fb580f;
+}
+
+.price, .correction {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.price span, .correction span {
+  font-weight: 600;
+}
+
+.button {
+  margin-top: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fb580f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e04a00;
+}

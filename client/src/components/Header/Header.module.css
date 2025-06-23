@@ -1,0 +1,70 @@
+.nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #111;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+.btn {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fb580f;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.btn:hover::before,
+.active::before {
+  transform: scaleX(1);
+}
+
+.btn,
+.btn:visited {
+  z-index: 1;
+}
+
+.active {
+  color: #fb580f;
+}
+
+/* Адаптация для экранов до 480px */
+@media (max-width: 480px) {
+  .container {
+    gap: 12px;          /* уменьшаем расстояние между кнопками */
+    padding: 0 8px;     /* уменьшаем внешние отступы */
+  }
+
+  .btn {
+    padding: 8px 12px;  /* чуть меньше «кнопка» */
+    font-size: 14px;    /* чуть помельче текст */
+  }
+}

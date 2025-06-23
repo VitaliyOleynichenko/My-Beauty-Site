@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px); /* чтобы отцентрировать и учесть хедер */
+  padding: 40px 20px;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #fb580f;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 24px;
+  color: #fb580f;
+  font-size: 28px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 20px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+}
+
+.list a:hover {
+  color: #fb580f;
+}
+
+.icon {
+  font-size: 24px;
+}
